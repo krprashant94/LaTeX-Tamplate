@@ -1,0 +1,182 @@
+%list of figure not working and next
+
+\documentclass[
+11pt, english, singlespacing, headsepline,oneside]{Documantation}
+\geometry{
+	paper=a4paper,
+	inner=2.5cm,
+	outer=3.8cm,
+	bindingoffset=.5cm,
+	top=1.5cm,
+	bottom=1.5cm,
+}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{mathpazo}
+\usepackage[backend=bibtex]{biblatex}
+\usepackage[autostyle=true]{csquotes}
+
+\addbibresource{example.bib}
+
+\thesistitle{Word Recognization on Indic Charecter}
+\supervisor{Dr Sukalpa Chanda and Mr Koushik Mallick}
+\supervisordisc{
+	\textbf{Dr Sukalpa Chanda}\\ 
+	Østfold University College\\
+	Norway
+	\and
+	\textbf{Mr Koushik Mallick}\\
+	RCC Institute of \\Information Technology\\
+	India
+}
+
+\degree{Bachelor of Technologyy}
+\author{Prashant Kumar Prasad and Pamela Banerjee}
+\authordisc{
+	\textbf{Prashant Kumar Prasad}\\
+	RCC Institute of \\Information Technology, Kolkata\\
+	Univ. roll
+	\and
+	\textbf{Pamela Banerjee}\\
+	RCC Institute of \\Information Technology, Kolkata\\
+	Univ. roll
+}
+\addresses{Kolkata, India}
+\university{RCC Institute of Information Technology}
+\department{Computer Science and Engineering}
+\faculty{}
+\subject{} 
+\keywords{}
+\examiner{Sukalpa Chanda}
+
+\AtBeginDocument{
+\hypersetup{pdftitle=\ttitle}
+\hypersetup{pdfauthor=\authorname}
+\hypersetup{pdfkeywords=\keywordnames}
+}
+
+\begin{document}
+
+\frontmatter
+
+\pagestyle{plain}
+
+\begin{titlepage}
+	\begin{center}
+		\includegraphics{logo}\\
+		{\scshape\LARGE \textcolor{blue}{\univname}\par}
+		\textcolor{blue}{Department of {\deptname}\\ {\addressname} }
+		\vspace{1cm}
+		
+		{\huge \ttitle\par}\vspace{3cm}	
+		\emph{Author}\\\bigskip
+		
+		\textcolor{blue}{\authordisc}
+		\vspace{1cm}
+				
+		\emph{Under Supervision of} \\ \bigskip
+		\textcolor{blue}{\supervisordisc}
+		 
+		\vfill
+		
+		\large \textit{
+			A report submitted in partial fulfillment of the requirements for \\
+			\degreename}\\[0.1cm]
+		\textit{in}\\[0.1cm]
+		\deptname\\[2cm]
+		 
+		\vfill
+		
+		{\large \today}\\
+		\addressname
+	\end{center}
+\end{titlepage}
+
+\begin{certificate}
+	\begin{center}
+		\LARGE
+		\textcolor{blue}{\univname} \\
+		\large
+	 	\textcolor{blue}{Department of {\deptname}}\\ [2cm]
+		 \huge{\MakeUppercase{Certificate}} \\ [1cm]
+	\end{center}
+	This is certyfy that \textbf{\authorname} complited the project entitled \textbf{\textit{\enquote{\ttitle}}} 
+	
+	\vfill 
+	\noindent {\examname} \\
+	\rule[0.5em]{25em}{0.5pt} % This prints a line for the signature
+	 
+	\noindent Date:\\
+	\rule[0.5em]{25em}{0.5pt} % This prints a line to write the date
+	\\[4cm]
+\end{certificate}
+
+%	ABSTRACT PAGE
+
+\begin{abstract}
+\addchaptertocentry{\abstractname} % Add the abstract to the table of contents
+The Thesis Abstract is written here (and usually kept to just this page). The page is kept centered vertically so can expand into the blank space above the title too\ldots
+\end{abstract}
+
+%	ACKNOWLEDGEMENTS
+
+\begin{acknowledgements}
+\addchaptertocentry{\acknowledgementname} % Add the acknowledgements to the table of contents
+The acknowledgments and the people to thank go here, don't forget to include your project advisor\ldots
+\end{acknowledgements}
+
+
+\begin{abbreviations}{ll} % Include a list of abbreviations (a table of two columns)
+
+
+%\addchaptertocentry{Abbrivation} 
+\textbf{LAH} & \textbf{L}ist \textbf{A}bbreviations \textbf{H}ere\\
+\textbf{WSF} & \textbf{W}hat (it) \textbf{S}tands \textbf{F}or\\
+
+\end{abbreviations}
+
+
+\listoffigures % Prints the list of figures
+
+%\addchaptertocentry{List of Figures} 
+
+\listoftables % Prints the list of tables
+
+%\addchaptertocentry{List of Tables} 
+
+\tableofcontents % Prints the main table of contents
+
+\pagestyle{thesis} % Return the page headers back to the "thesis" style
+
+\pagenumbering{arabic}
+\setcounter{page}{0}
+\setcounter{chapter}{1}
+
+\chapter{How to write}
+sdbjh \cite{einstein} and \cite{knuthwebsite}
+\section{Page structure}
+
+\includegraphics{logo}
+\subsection{Title Page}
+\subsection{Certificate}
+\subsection{Abstract}
+\subsection{acknoledgment}
+\subsection{Biblography}
+
+\section{Copying}
+Copying is not allowed
+
+\chapter{Lorem}
+bf mdfdkjf dkjfbdkj fdkfnkjdf ssjkbdkjsd sfskjdbf dsmnsdnb sdkjfjsd 
+\section{lroem Lipsum}
+lorem lipsum al deroado andh jh he g shg. 
+\subsection{lorem lipsum}
+jhdgd dhgjhd jdgjdj jdjbdmn dbfjkd dfbdkjfd fjkdbfjkd fkdfdf dfkjdbfkjdfdjfbdkjf dfmd kjfdn
+
+%	BIBLIOGRAPHY
+
+\printbibliography
+\addcontentsline{toc}{chapter}{Bibliography}
+
+\end{document}  
